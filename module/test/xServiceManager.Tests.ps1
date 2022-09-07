@@ -8,3 +8,10 @@ Describe 'Module Manifest Tests' {
     }
 }
 
+Describe 'Loading Module Tests' {
+    It 'Loads xServiceManager module' {
+        Import-Module -$ModuleManifestPath
+        $moduleLoaded = Get-Module -Name 'xServiceManager'
+        $moduleLoaded | Should Be $true
+    }
+}
