@@ -2,7 +2,9 @@
 $GLOBAL:XSCSMSMADLL = ([System.AppDomain]::CurrentDomain.GetAssemblies() | Where-Object { $_.location -match 'System.Management.Automation.dll' }).location
 $GLOBAL:XSCSMINSTALLDIR = (Get-ItemProperty 'HKLM:/Software/Microsoft/System Center/2010/Service Manager/Setup').InstallDirectory
 $GLOBAL:XSCSMSDKDIR = "${XSCSMINSTALLDIR}\SDK Binaries"
-$GLOBAL:XSCSMCOREDLL = "${XSCSMSDKDIR}/Microsoft.EnterpriseManagement.Core.dll"
+$GLOBAL:XSCSMCOREDLL = "${XSCSMSDKDIR}\Microsoft.EnterpriseManagement.Core.dll"
+$GLOBAL:XSCSMSMDLL = "${XSCSMSDKDIR}\Microsoft.EnterpriseManagement.ServiceManager.dll"
+$GLOBAL:XSCSMPACKAGINGDLL = "${XSCSMSDKDIR}\Microsoft.EnterpriseManagement.Packaging.dll"
 $GLOBAL:XSCSMEMGTYPE = 'Microsoft.EnterpriseManagement.EnterpriseManagementGroup'
 
 
@@ -22,4 +24,7 @@ Foreach ($import in @($Public + $Private)) {
 Export-ModuleMember -Function $Public.Basename
 
 # prepare global module stuff
+Import-Module -Name "$GLOBAL:XSCSMINSTALLDIR\Powershell\System.Center.Service.Manager.psd1" -Force
 Import-xSCSMAssembly -AssemblyFile $GLOBAL:XSCSMCOREDLL
+Import-xSCSMAssembly -AssemblyFile $GLOBAL:XSCSMSMDLL
+Import-xSCSMAssembly -AssemblyFile $GLOBAL:XSCSMPACKAGINGDLL
