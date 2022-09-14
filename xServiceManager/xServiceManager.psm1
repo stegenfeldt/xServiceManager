@@ -24,7 +24,9 @@ Foreach ($import in @($Public + $Private)) {
 Export-ModuleMember -Function $Public.Basename
 
 # prepare global module stuff
-Import-Module -Name "$GLOBAL:XSCSMINSTALLDIR\Powershell\System.Center.Service.Manager.psd1" -Force
+if ($null -eq (Get-Module -Name 'System.Center.Service.Manager')) {
+    Import-Module -Name "$GLOBAL:XSCSMINSTALLDIR\Powershell\System.Center.Service.Manager.psd1" -Force
+}
 Import-xSCSMAssembly -AssemblyFile $GLOBAL:XSCSMCOREDLL
 Import-xSCSMAssembly -AssemblyFile $GLOBAL:XSCSMSMDLL
 Import-xSCSMAssembly -AssemblyFile $GLOBAL:XSCSMPACKAGINGDLL
