@@ -52,9 +52,6 @@ function Get-xSCSMRelatedObject {
                 $relationshipObjects = $RelatedByGenericMethod.Invoke($mg.EntityObjects, ([guid]$smObject.Id, $defaultQueryOption))
             }
         }
-        # foreach($relObj in $relatedObjects) {
-        #     $relObj.fullname
-        # }
     }
     
     end {
