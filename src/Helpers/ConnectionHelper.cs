@@ -45,12 +45,16 @@ namespace xServiceManager.Module
             lock (locker)
             {
                 string sessionId = GenereateUniqSessionId(computerName, threeLetterWindowsLanguageName, credential);
-                if (ht == null) { ht = new Hashtable(StringComparer.OrdinalIgnoreCase); }
+                if (ht == null) { 
+                    ht = new Hashtable(StringComparer.OrdinalIgnoreCase); 
+                }
                 if (!ht.ContainsKey(sessionId))
                 {
                     EnterpriseManagementGroup emg;
-                    EnterpriseManagementConnectionSettings settings = new EnterpriseManagementConnectionSettings(computerName);
-                    settings.ThreeLetterWindowsLanguageName = threeLetterWindowsLanguageName;
+                    EnterpriseManagementConnectionSettings settings = new EnterpriseManagementConnectionSettings(computerName)
+                    {
+                        ThreeLetterWindowsLanguageName = threeLetterWindowsLanguageName
+                    };
 
                     if (credential != null)
                     {
@@ -61,7 +65,7 @@ namespace xServiceManager.Module
 
                     }
 
-                    emg = new EnterpriseManagementGroup(settings);
+                    emg = new EnterpriseManagementGroup(settings); //FIXME Investigate why this failes in .Net core.
                     try
                     {
                         ht.Add(sessionId, emg);

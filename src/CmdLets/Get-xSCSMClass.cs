@@ -49,7 +49,8 @@ namespace xServiceManager.Module
                 Regex r = new Regex(Name, RegexOptions.IgnoreCase);
                 foreach (ManagementPackClass o in _mg.EntityTypes.GetClasses())
                 {
-                    if (r.Match(o.Name).Success)
+                    //FIXME: There must be a better way to do this than returning *everything* and looping through them.
+                    if (r.IsMatch(o.Name))
                     {
                         WriteObject(o);
                     }

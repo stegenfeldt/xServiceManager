@@ -36,7 +36,8 @@ namespace xServiceManager.Module
             set { _scsmSession = value; }
         }
 
-        private string _threeLetterWindowsLanguageName = CultureInfo.CurrentUICulture.ThreeLetterWindowsLanguageName;
+        // private string _threeLetterWindowsLanguageName = CultureInfo.CurrentUICulture.ThreeLetterWindowsLanguageName;
+        private string _threeLetterWindowsLanguageName = "ENU"; // default to english
         [Parameter(HelpMessage = "Language code for connection. The default is current UI Culture", Mandatory = false)]
         [ValidateNotNullOrEmpty]
         public string ThreeLetterWindowsLanguageName

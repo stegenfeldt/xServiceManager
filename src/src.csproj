@@ -19,7 +19,8 @@
     <PackageReference Include="PowerShellStandard.Library" Version="5.1.0">
       <PrivateAssets>All</PrivateAssets>
     </PackageReference>
-    <PackageReference Include="SCSM-Microsoft.EnterpriseManagement.Core" Version="10.19.1035" />
+    <!-- <PackageReference Include="SCSM-Microsoft.EnterpriseManagement.Core" Version="10.19.1035" /> -->
+    <Reference Include="..\ref\*.dll" />
   </ItemGroup>
 
 </Project>
