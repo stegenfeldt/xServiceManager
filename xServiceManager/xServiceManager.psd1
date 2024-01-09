@@ -12,7 +12,7 @@
 RootModule = 'xServiceManager.Module.dll'
 
 # Version number of this module.
-ModuleVersion = '1.0.0.27'
+ModuleVersion = '1.0.0.32'
 
 # Supported PSEditions
 # CompatiblePSEditions = @()
@@ -54,7 +54,7 @@ Description = 'Support-module to the stock ServiceManager module without clobber
 # RequiredModules = @()
 
 # Assemblies that must be loaded prior to importing this module
-RequiredAssemblies = 'xServiceManager.Module.dll'
+# RequiredAssemblies = @()
 
 # Script files (.ps1) that are run in the caller's environment prior to importing this module.
 # ScriptsToProcess = @()
@@ -69,15 +69,45 @@ RequiredAssemblies = 'xServiceManager.Module.dll'
 NestedModules = @('xServiceManager.psm1')
 
 # Functions to export from this module, for best performance, do not use wildcards and do not delete the entry, use an empty array if there are no functions to export.
-FunctionsToExport = 'Get-xSCSMEnumeration', 'Get-xSCSMRelatedObjectScript'
+FunctionsToExport = 'Get-xSCSMEnumerationScript', 'Get-xSCSMRelatedObjectScript'
 
 # Cmdlets to export from this module, for best performance, do not use wildcards and do not delete the entry, use an empty array if there are no cmdlets to export.
-CmdletsToExport = 'Get-xSCSMConfigItem', 'Get-xSCSMObject', 'Get-xSCSMObjectHistory', 
-               'Get-xSCSMObjectProjection', 'Get-xSCSMRelatedObject', 
-               'Get-xSCSMRelationshipObject', 'New-xSCSMObject', 
-               'New-xSCSMObjectProjection', 'New-xSCSMRelationshipObject', 
-               'Remove-xSCSMObject', 'Remove-xSCSMRelationshipObject', 
-               'Set-xSCSMObject', 'Set-xSCSMObjectProjection'
+CmdletsToExport = 'Add-xSCSMEnumeration', 'Get-xSCSMChildEnumeration', 'Get-xSCSMClass', 
+               'Get-xSCSMClassProperty', 'Get-xSCSMConfigItem', 
+               'Get-xSCSMEnumeration', 'Get-xSCSMGroup', 'Get-xSCSMObject', 
+               'Get-xSCSMObjectHistory', 'Get-xSCSMObjectProjection', 
+               'Get-xSCSMQueue', 'Get-xSCSMRelatedObject', 
+               'Get-xSCSMRelationshipClass', 'Get-xSCSMRelationshipObject', 
+               'Get-xSCSMTopLevelEnumeration', 'Get-xSCSMTypeProjection', 
+               'New-xSCSMGroup', 'New-xSCSMObject', 'New-xSCSMObjectProjection', 
+               'New-xSCSMQueue', 'New-xSCSMRelationshipObject', 
+               'Remove-xSCSMEnumeration', 'Remove-xSCSMGroup', 'Remove-xSCSMObject', 
+               'Remove-xSCSMQueue', 'Remove-xSCSMRelationshipObject', 
+               'Set-xSCSMObject', 'Set-xSCSMObjectProjection', 
+               'Export-xSCSMManagementPack', 'Get-xSCSMDWConfiguration', 
+               'Get-xSCSMManagementPack', 'Get-xSCSMManagementPackElement', 
+               'Get-xSCSMRunAsAccount', 'Get-xSCSMDWDimensionTypes', 
+               'Get-xSCSMDWFactTypes', 'Get-xSCSMDWMeasureTypes', 
+               'Get-xSCSMDWOutriggerTypes', 'Get-xSCSMDWRelationshipFactTypes', 
+               'Get-xSCSMDWWarehouseModuleTypes', 'Get-xSCSMConnectedUser', 
+               'Get-xSCSMConsoleTask', 'Get-xSCSMFolder', 'Get-xSCSMFolderHierarchy', 
+               'Get-xSCSMForm', 'Get-xSCSMImage', 'Get-xSCSMLanguagePackCulture', 
+               'Get-SCSMManagementPackReference', 'Get-SCSMObjectTemplate', 
+               'Get-xSCSMPage', 'Get-xSCSMPageSet', 'Get-xSCSMSession', 
+               'Get-xSCSMStringResource', 'Get-xSCSMUserRole', 'Get-xSCSMView', 
+               'Get-xSCSMViewSetting', 'Get-xSCSMViewType', 'Get-xSCSMWhoAmI', 
+               'Get-xSCSMUserRoleProfile', 'Get-xSCSMResource', 'Get-xSCSMRule', 
+               'Get-xSCSMSubscription', 'Get-xSCSMTask', 'New-xSCSMManagementPack', 
+               'New-xSCSMColumn', 'New-SCSMManagementPackReference', 
+               'New-SCSMObjectTemplate', 'New-xSCSMSession', 'New-xSCSMUserRole', 
+               'New-xSCSMFolder', 'New-xSCSMNotificationSubscription', 
+               'New-xSCSMView', 'Remove-xSCSMManagementPack', 'Remove-xSCSMSession', 
+               'Remove-xSCSMUserRole', 'Remove-xSCSMView', 
+               'Remove-xSCSMSubscription', 'Get-xSCSMIncident', 'New-xSCSMIncident', 
+               'Set-xSCSMIncident', 'Set-xSCSMDefaultComputer', 
+               'Set-xSCSMRunAsAccount', 'Set-SCSMObjectTemplate', 
+               'Set-xSCSMUserRole', 'New-xSCSMAnnouncement', 'Get-xSCSMAnnouncement', 
+               'Set-xSCSMAnnouncement'
 
 # Variables to export from this module
 # VariablesToExport = @()
