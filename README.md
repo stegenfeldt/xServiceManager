@@ -12,7 +12,8 @@ Scripts should be formatted following OTBS. Suggested settings for this workspac
 
 ## Project structure
 
-All the module code is in the `module` directory. 
+All the script based module code is in the `xServiceManager` directory.  
+All the C# based module code is in the `src` directory.
 
 The `xServiceManager.psm1` file should generally not define functions and does not really need to be touched. It will scan the `Public` and `Private` directories and dot-source the files. Scripts within the `Public` folder will be exported as ModuleMembers to the end-user.
 

@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <AssemblyName>xServiceManager.Native</AssemblyName>
+    <GenerateDocumentationFile>True</GenerateDocumentationFile>
+    <DocumentationFile>..\docs\xServiceManager.Native.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <Target Name="CopyDLL" AfterTargets="Build">
+    <Message Text="Copy Module assembly to /module/" Importance="High" />
+    <Copy
+      SourceFiles="$(TargetDir)xServiceManager.Native.dll"
+      DestinationFolder="$(ProjectDir)\..\xServiceManager\" />
+
+    <Message Text="DLL Copy complete." Importance="High" />
+  </Target>
+
+  <ItemGroup>
+    <PackageReference Include="PowerShellStandard.Library" Version="5.1.0-preview-06">
+      <PrivateAssets>All</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="SCSM-Microsoft.EnterpriseManagement.Core" Version="10.19.1035" />
+  </ItemGroup>
+
+</Project>

@@ -37,5 +37,6 @@
 	"powershell.pester.debugOutputVerbosity": "Minimal",
 	"powershell.pester.outputVerbosity": "None",
 	"powershell.scriptAnalysis.enable": true,
-	"powershell.scriptAnalysis.settingsPath": "PSScriptAnalyzerSettings.psd1"
+	"powershell.scriptAnalysis.settingsPath": "PSScriptAnalyzerSettings.psd1",
+	"r.lsp.promptToInstall": false
 }

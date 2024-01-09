@@ -1,0 +1,24 @@
+{
+  "version": 2,
+  "dgSpecHash": "Dqa/Fxq8+mQd1Vy/iDsLKlIbvqP5AV276zIWLgtWq3sdGZQvvjlqzoaK7x7pezKYWyzKzXK9aDwP1+IqKjdhVA==",
+  "success": true,
+  "projectFilePath": "C:\\sources\\public\\xServiceManager\\src\\src.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\SAPER\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\SAPER\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\SAPER\\.nuget\\packages\\powershellstandard.library\\5.1.0-preview-06\\powershellstandard.library.5.1.0-preview-06.nupkg.sha512",
+    "C:\\Users\\SAPER\\.nuget\\packages\\scsm-microsoft.enterprisemanagement.core\\10.19.1035\\scsm-microsoft.enterprisemanagement.core.10.19.1035.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'SCSM-Microsoft.EnterpriseManagement.Core 10.19.1035' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework '.NETStandard,Version=v2.0'. This package may not be fully compatible with your project.",
+      "libraryId": "SCSM-Microsoft.EnterpriseManagement.Core",
+      "targetGraphs": [
+        ".NETStandard,Version=v2.0"
+      ]
+    }
+  ]
+}
