@@ -2,7 +2,7 @@ using System.Management.Automation;
 using Microsoft.EnterpriseManagement.Common;
 using Microsoft.EnterpriseManagement.Configuration;
 
-namespace xServiceManager
+namespace xServiceManager.Module
 {
     [Cmdlet(VerbsCommon.Get, "xSCSMRelatedObject", DefaultParameterSetName = "Wrapped")]
     public class GetSMRelatedObjectCommand : ObjectCmdletHelper

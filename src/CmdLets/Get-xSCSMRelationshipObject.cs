@@ -5,7 +5,7 @@ using Microsoft.EnterpriseManagement.Common;
 using Microsoft.EnterpriseManagement.Configuration;
 using System.Text.RegularExpressions;
 
-namespace xServiceManager
+namespace xServiceManager.Module
 {
     [Cmdlet(VerbsCommon.Get, "xSCSMRelationshipObject", DefaultParameterSetName = "ID")]
     public class GetSCSMRelationshipObjectCommand : ObjectCmdletHelper

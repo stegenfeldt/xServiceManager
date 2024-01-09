@@ -15,7 +15,7 @@ using Microsoft.EnterpriseManagement.Configuration.IO;
 using Microsoft.EnterpriseManagement.ConnectorFramework;
 using System.Text.RegularExpressions;
 
-namespace xServiceManager
+namespace xServiceManager.Module
 {
     // TEMPLATE FILE, DO NOT MODIFY
 

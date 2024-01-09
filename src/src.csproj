@@ -2,17 +2,16 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
-    <AssemblyName>xServiceManager.Native</AssemblyName>
-    <GenerateDocumentationFile>True</GenerateDocumentationFile>
-    <DocumentationFile>..\docs\xServiceManager.Native.xml</DocumentationFile>
+    <AssemblyName>xServiceManager.Module</AssemblyName>
+    <GenerateDocumentationFile>False</GenerateDocumentationFile>
+    <DocumentationFile>..\docs\xServiceManager.Module.xml</DocumentationFile>
   </PropertyGroup>
 
   <Target Name="CopyDLL" AfterTargets="Build">
     <Message Text="Copy Module assembly to /module/" Importance="High" />
     <Copy
-      SourceFiles="$(TargetDir)xServiceManager.Native.dll"
+      SourceFiles="$(TargetDir)xServiceManager.Module.dll"
       DestinationFolder="$(ProjectDir)\..\xServiceManager\" />
-
     <Message Text="DLL Copy complete." Importance="High" />
   </Target>
 

@@ -12,7 +12,7 @@ using Microsoft.EnterpriseManagement.Common;
 using Microsoft.EnterpriseManagement.Configuration;
 using System.Text.RegularExpressions;
 
-namespace xServiceManager
+namespace xServiceManager.Module
 {
 
     public class ObjectCmdletHelper : SMCmdletBase

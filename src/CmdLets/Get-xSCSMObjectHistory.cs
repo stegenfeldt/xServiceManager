@@ -1,7 +1,7 @@
 using System.Management.Automation;
 using Microsoft.EnterpriseManagement.Common;
 
-namespace xServiceManager
+namespace xServiceManager.Module
 {
     [Cmdlet(VerbsCommon.Get, "xSCSMObjectHistory")]
     public class GetSCSMObjectHistoryCommand : ObjectCmdletHelper

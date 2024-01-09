@@ -230,7 +230,7 @@
     "version": "1.0.0",
     "restore": {
       "projectUniqueName": "C:\\sources\\public\\xServiceManager\\src\\src.csproj",
-      "projectName": "xServiceManager.Native",
+      "projectName": "xServiceManager.Module",
       "projectPath": "C:\\sources\\public\\xServiceManager\\src\\src.csproj",
       "packagesPath": "C:\\Users\\SAPER\\.nuget\\packages\\",
       "outputPath": "C:\\sources\\public\\xServiceManager\\src\\obj\\",

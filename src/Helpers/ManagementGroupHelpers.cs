@@ -15,7 +15,7 @@ using System.Reflection;
 using System.Text;
 using System.Globalization;
 
-namespace xServiceManager
+namespace xServiceManager.Module
 {
     public class SMCmdletBase : PSCmdlet
     {

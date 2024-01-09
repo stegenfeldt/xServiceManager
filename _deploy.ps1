@@ -4,15 +4,18 @@ $version = $currentManifest.ModuleVersion -as [version]
 $version = [version]::new($version.Major, $version.Minor, $version.Build, $version.Revision + 1)
 $Public = @( Get-ChildItem -Path "$($modDir.FullName)\Public\*.ps1" -ErrorAction SilentlyContinue )
 $Parms = @{
-    Path              = "$($modDir.FullName)\xServiceManager.psd1"
-    Guid              = '745e34ef-0024-4e7b-a382-30b892536374'
-    Author            = 'stegenfeldt'
-    CompanyName       = 'TeknoglotSE'
-    Copyright         = '(c) 2022 TeknoglotSE. All rights reserved.'
-    ModuleVersion     = $version
-    FunctionsToExport = $Public.Basename
-    Description       = 'Support-module to the stock ServiceManager module without reliance on 3rd-party DLLs'
+    Path               = "$($modDir.FullName)\xServiceManager.psd1"
+    RootModule         = "xServiceManager.Module.dll"
+    Guid               = '745e34ef-0024-4e7b-a382-30b892536374'
+    Author             = 'stegenfeldt, Sundqvist, Truher, Wright, Gritsenko'
+    CompanyName        = 'Community Developed'
+    Copyright          = 'Copyright 2022.'
+    ModuleVersion      = $version
+    FunctionsToExport  = $Public.Basename
+    Description        = 'Support-module to the stock ServiceManager module without clobbering the default modules. Based on SMLets. Should support Windows Powershell 5.1+ and Powershell 7+.'
+    NestedModules      = @('xServiceManager.psm1')
 }
+
 Update-ModuleManifest @Parms
 
-Publish-Module -Path 'D:\dev\xServiceManager\xServiceManager' -Repository 'PSRepo-TEST' -NuGetApiKey 'xServiceManager' -Force -Verbose
+Publish-Module -Path $modDir.FullName -Repository 'PSRepo-TEST' -NuGetApiKey 'xServiceManager' -Force -Verbose

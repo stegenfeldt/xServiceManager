@@ -3,7 +3,7 @@ using System.Management.Automation;
 using Microsoft.EnterpriseManagement.Common;
 using Microsoft.EnterpriseManagement.ConnectorFramework;
 
-namespace xServiceManager
+namespace xServiceManager.Module
 {
     [Cmdlet(VerbsCommon.Remove, "xSCSMRelationshipObject", SupportsShouldProcess = true)]
     public class RemoveSMRelationshipObjectCommand : ObjectCmdletHelper

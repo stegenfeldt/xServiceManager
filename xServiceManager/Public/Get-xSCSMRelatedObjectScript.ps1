@@ -1,4 +1,4 @@
-function Get-xSCSMRelatedObject {
+function Get-xSCSMRelatedObjectScript {
     [CmdletBinding()]
     param (
         # Get related objects by from source object

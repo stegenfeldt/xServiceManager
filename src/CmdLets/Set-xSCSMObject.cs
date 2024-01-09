@@ -5,7 +5,7 @@ using System.Management.Automation;
 using Microsoft.EnterpriseManagement.Common;
 using Microsoft.EnterpriseManagement.ConnectorFramework;
 
-namespace xServiceManager
+namespace xServiceManager.Module
 {
     [Cmdlet(VerbsCommon.Set, "xSCSMObject", SupportsShouldProcess = true)]
     public class SetSMObjectCommand : ObjectCmdletHelper

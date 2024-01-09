@@ -7,7 +7,7 @@ using Microsoft.EnterpriseManagement.Configuration;
 using Microsoft.EnterpriseManagement.ConnectorFramework;
 using System.Text.RegularExpressions;
 
-namespace xServiceManager
+namespace xServiceManager.Module
 {
     [Cmdlet(VerbsCommon.New, "xSCSMObjectProjection", SupportsShouldProcess = true)]
     public class NewSCSMObjectProjectionCommand : ObjectCmdletHelper

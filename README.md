@@ -12,12 +12,13 @@ Scripts should be formatted following OTBS. Suggested settings for this workspac
 
 ## Project structure
 
-All the script based module code is in the `xServiceManager` directory.  
 All the C# based module code is in the `src` directory.
+
+All the script based module code is in the `xServiceManager` directory.  
 
 The `xServiceManager.psm1` file should generally not define functions and does not really need to be touched. It will scan the `Public` and `Private` directories and dot-source the files. Scripts within the `Public` folder will be exported as ModuleMembers to the end-user.
 
-`.vscode` contains a few helper functions for working with the module in vscode.
+`.vscode` contains a few helper configurations for working with the module in vscode.
 
 `test` is where Pester tests are defined
 

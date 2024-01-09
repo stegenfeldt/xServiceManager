@@ -7,7 +7,7 @@ using Microsoft.EnterpriseManagement;
 using Microsoft.EnterpriseManagement.Common;
 using Microsoft.EnterpriseManagement.Configuration;
 
-namespace xServiceManager
+namespace xServiceManager.Module
 {
     [Cmdlet(VerbsCommon.Get, "xSCSMObjectProjection", DefaultParameterSetName = "Wrapped")]
     public class GetSMObjectProjectionCommand : FilterCmdletBase

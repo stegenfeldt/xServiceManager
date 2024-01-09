@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace xServiceManager
+namespace xServiceManager.Module
 {
     public static class Enumerations
     {

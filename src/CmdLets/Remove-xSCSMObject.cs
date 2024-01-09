@@ -4,7 +4,7 @@ using Microsoft.EnterpriseManagement.Common;
 using Microsoft.EnterpriseManagement.Configuration;
 using Microsoft.EnterpriseManagement.ConnectorFramework;
 
-namespace xServiceManager
+namespace xServiceManager.Module
 {
     [Cmdlet(VerbsCommon.Remove, "xSCSMObject", SupportsShouldProcess = true)]
     public class RemoveSMObjectCommand : ObjectCmdletHelper

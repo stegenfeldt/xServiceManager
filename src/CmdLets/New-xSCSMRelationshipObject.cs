@@ -6,7 +6,7 @@ using Microsoft.EnterpriseManagement.Common;
 using Microsoft.EnterpriseManagement.Configuration;
 using Microsoft.EnterpriseManagement.ConnectorFramework;
 
-namespace xServiceManager
+namespace xServiceManager.Module
 {
     [Cmdlet(VerbsCommon.New, "xSCSMRelationshipObject", SupportsShouldProcess = true)]
     public class NewSCSMRelationshipObject : ObjectCmdletHelper
