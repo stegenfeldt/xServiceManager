@@ -1,12 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Management.Automation;
-using Microsoft.EnterpriseManagement;
 using Microsoft.EnterpriseManagement.Common;
 using Microsoft.EnterpriseManagement.Configuration;
-using Microsoft.EnterpriseManagement.Configuration.IO;
 using System.Text.RegularExpressions;
 
 namespace xServiceManager.Module

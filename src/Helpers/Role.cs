@@ -5,27 +5,10 @@ using Microsoft.EnterpriseManagement.Security;
 using System;
 using System.Collections.Generic;
 using System.Globalization;
-using System.Text;
 using System.Linq;
 
 namespace xServiceManager.Module
 {
-    public enum UserRoleTypeEnum
-    {
-        ActivityImplementer,
-        AdvancedOperator,
-        Author,
-        ChangeInitiator,
-        ChangeManager,
-        EndUser,
-        IncidentResolver,
-        ProblemAnalyst,
-        ReadOnlyOperator,
-        ReleaseManager,
-        ServiceRequestAnalyst
-    }
-
-
     public class Role
     {
         public static readonly Guid System_CatalogItem = new Guid("E5151BC2-14B3-A138-DC31-9EF1FBC34728");

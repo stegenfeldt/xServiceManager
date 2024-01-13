@@ -6,16 +6,27 @@ using System.Text.RegularExpressions;
 
 namespace xServiceManager.Module
 {
+    /// <summary>
+    /// Represents a cmdlet for retrieving a Service Manager class.
+    /// </summary>
     [Cmdlet(VerbsCommon.Get, "xSCSMClass")]
     public class GetSMClassCommand : EntityTypeHelper
     {
         private Guid _id = Guid.Empty;
+
+        /// <summary>
+        /// Gets or sets the ID of the class to retrieve.
+        /// </summary>
         [Parameter]
         public Guid Id
         {
             get { return _id; }
             set { _id = value; }
         }
+
+        /// <summary>
+        /// Processes the record based on the provided ID or class name.
+        /// </summary>
         protected override void ProcessRecord()
         {
             if (Id != Guid.Empty)
@@ -46,5 +57,4 @@ namespace xServiceManager.Module
             }
         }
     }
-
 }

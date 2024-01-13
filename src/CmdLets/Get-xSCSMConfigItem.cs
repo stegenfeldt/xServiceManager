@@ -7,6 +7,9 @@ using Microsoft.EnterpriseManagement.Configuration;
 
 namespace xServiceManager.Module
 {
+    /// <summary>
+    /// Represents a cmdlet to retrieve Service Manager configuration items based on their display name.
+    /// </summary>
     [Cmdlet(VerbsCommon.Get, "xSCSMConfigItem", SupportsShouldProcess = true)]
     public class SCSMConfigItemGet : SMCmdletBase
     {
