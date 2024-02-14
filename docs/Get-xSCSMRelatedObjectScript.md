@@ -15,13 +15,13 @@ schema: 2.0.0
 ### BySource
 ```
 Get-xSCSMRelatedObjectScript [-SourceObject <EnterpriseManagementObject>] [-RelationShipClass <Object>]
- [-ProgressAction <ActionPreference>] [<CommonParameters>]
+ [<CommonParameters>]
 ```
 
 ### ByTarget
 ```
 Get-xSCSMRelatedObjectScript [-TargetObject <EnterpriseManagementObject>] [-RelationShipClass <Object>]
- [-ProgressAction <ActionPreference>] [<CommonParameters>]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -75,21 +75,6 @@ Accept wildcard characters: False
 Type: Microsoft.EnterpriseManagement.Common.EnterpriseManagementObject
 Parameter Sets: ByTarget
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: System.Management.Automation.ActionPreference
-Parameter Sets: (All)
-Aliases: proga
 
 Required: False
 Position: Named

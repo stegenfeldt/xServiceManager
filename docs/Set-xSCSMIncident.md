@@ -18,8 +18,7 @@ Set-xSCSMIncident [-ID] <String> [[-Description] <String>] [[-Impact] <String>] 
  [[-Status] <String>] [[-Comment] <String>] [-UserComment <String>] [[-AttachmentPath] <String>]
  [[-Source] <String>] [[-Classification] <String>] [-SupportGroup <String>] [-ComputerName <String>]
  [-Credential <PSCredential>] [-SCSMSession <EnterpriseManagementGroup>]
- [-ThreeLetterWindowsLanguageName <String>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-ThreeLetterWindowsLanguageName <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### InputObject
@@ -28,8 +27,7 @@ Set-xSCSMIncident [-InputObject] <EnterpriseManagementObjectProjection[]> [[-Des
  [[-Impact] <String>] [[-Urgency] <String>] [[-Status] <String>] [[-Comment] <String>] [-UserComment <String>]
  [[-AttachmentPath] <String>] [[-Source] <String>] [[-Classification] <String>] [-SupportGroup <String>]
  [-ComputerName <String>] [-Credential <PSCredential>] [-SCSMSession <EnterpriseManagementGroup>]
- [-ThreeLetterWindowsLanguageName <String>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-ThreeLetterWindowsLanguageName <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -312,21 +310,6 @@ The cmdlet is not run.
 Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: System.Management.Automation.ActionPreference
-Parameter Sets: (All)
-Aliases: proga
 
 Required: False
 Position: Named

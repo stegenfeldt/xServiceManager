@@ -16,15 +16,14 @@ schema: 2.0.0
 ```
 Get-xSCSMResource [-ManagementPack <ManagementPack>] [-Name <String>] [-Tag <String>] [-Data]
  [-QueryOption <ObjectQueryOptions>] [-ComputerName <String>] [-Credential <PSCredential>]
- [-SCSMSession <EnterpriseManagementGroup>] [-ThreeLetterWindowsLanguageName <String>]
- [-ProgressAction <ActionPreference>] [<CommonParameters>]
+ [-SCSMSession <EnterpriseManagementGroup>] [-ThreeLetterWindowsLanguageName <String>] [<CommonParameters>]
 ```
 
 ### Guid
 ```
 Get-xSCSMResource [[-Id] <Guid>] [-Tag <String>] [-Data] [-QueryOption <ObjectQueryOptions>]
  [-ComputerName <String>] [-Credential <PSCredential>] [-SCSMSession <EnterpriseManagementGroup>]
- [-ThreeLetterWindowsLanguageName <String>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
+ [-ThreeLetterWindowsLanguageName <String>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -184,21 +183,6 @@ The default is current UI Culture
 Type: System.String
 Parameter Sets: (All)
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: System.Management.Automation.ActionPreference
-Parameter Sets: (All)
-Aliases: proga
 
 Required: False
 Position: Named

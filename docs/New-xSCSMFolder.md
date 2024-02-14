@@ -15,8 +15,7 @@ schema: 2.0.0
 ```
 New-xSCSMFolder -DisplayName <String> -ParentFolder <ManagementPackFolder> -ManagementPack <ManagementPack>
  [-QueryOption <ObjectQueryOptions>] [-ComputerName <String>] [-Credential <PSCredential>]
- [-SCSMSession <EnterpriseManagementGroup>] [-ThreeLetterWindowsLanguageName <String>]
- [-ProgressAction <ActionPreference>] [<CommonParameters>]
+ [-SCSMSession <EnterpriseManagementGroup>] [-ThreeLetterWindowsLanguageName <String>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -146,21 +145,6 @@ The default is current UI Culture
 Type: System.String
 Parameter Sets: (All)
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: System.Management.Automation.ActionPreference
-Parameter Sets: (All)
-Aliases: proga
 
 Required: False
 Position: Named

@@ -16,8 +16,8 @@ schema: 2.0.0
 ```
 New-xSCSMObject [-PropertyHashtable] <Hashtable> [-Template <ManagementPackObjectTemplate>] [-PassThru]
  [-NoCommit] [-Bulk] [-QueryOption <ObjectQueryOptions>] [-ComputerName <String>] [-Credential <PSCredential>]
- [-SCSMSession <EnterpriseManagementGroup>] [-ThreeLetterWindowsLanguageName <String>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-SCSMSession <EnterpriseManagementGroup>] [-ThreeLetterWindowsLanguageName <String>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### class
@@ -25,8 +25,7 @@ New-xSCSMObject [-PropertyHashtable] <Hashtable> [-Template <ManagementPackObjec
 New-xSCSMObject [-Class] <ManagementPackClass> [-PropertyHashtable] <Hashtable>
  [-Template <ManagementPackObjectTemplate>] [-PassThru] [-NoCommit] [-Bulk] [-QueryOption <ObjectQueryOptions>]
  [-ComputerName <String>] [-Credential <PSCredential>] [-SCSMSession <EnterpriseManagementGroup>]
- [-ThreeLetterWindowsLanguageName <String>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-ThreeLetterWindowsLanguageName <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -232,21 +231,6 @@ The cmdlet is not run.
 Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: System.Management.Automation.ActionPreference
-Parameter Sets: (All)
-Aliases: proga
 
 Required: False
 Position: Named

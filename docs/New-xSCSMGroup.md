@@ -19,8 +19,7 @@ New-xSCSMGroup [[-ManagementPackName] <String>] [-ManagementPackFriendlyName <St
  [-SubGroup <EnterpriseManagementGroupObject[]>] [[-Name] <String>] [-Description <String>] [-PassThru]
  [-Import] [-GroupType <__GroupType>] [-Force] [-QueryOption <ObjectQueryOptions>] [-ComputerName <String>]
  [-Credential <PSCredential>] [-SCSMSession <EnterpriseManagementGroup>]
- [-ThreeLetterWindowsLanguageName <String>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-ThreeLetterWindowsLanguageName <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### FromMP
@@ -29,8 +28,7 @@ New-xSCSMGroup [[-Include] <EnterpriseManagementObject[]>] [-Exclude <Enterprise
  [-SubGroup <EnterpriseManagementGroupObject[]>] [[-Name] <String>] [-ManagementPack] <ManagementPack>
  [-PassThru] [-Import] [-GroupType <__GroupType>] [-Force] [-QueryOption <ObjectQueryOptions>]
  [-ComputerName <String>] [-Credential <PSCredential>] [-SCSMSession <EnterpriseManagementGroup>]
- [-ThreeLetterWindowsLanguageName <String>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-ThreeLetterWindowsLanguageName <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -327,21 +325,6 @@ The cmdlet is not run.
 Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: System.Management.Automation.ActionPreference
-Parameter Sets: (All)
-Aliases: proga
 
 Required: False
 Position: Named

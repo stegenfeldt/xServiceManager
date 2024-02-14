@@ -15,22 +15,19 @@ schema: 2.0.0
 ### name (Default)
 ```
 Get-xSCSMUserRole [[-Name] <String[]>] [-NoAdapt] [-ComputerName <String>] [-Credential <PSCredential>]
- [-SCSMSession <EnterpriseManagementGroup>] [-ThreeLetterWindowsLanguageName <String>]
- [-ProgressAction <ActionPreference>] [<CommonParameters>]
+ [-SCSMSession <EnterpriseManagementGroup>] [-ThreeLetterWindowsLanguageName <String>] [<CommonParameters>]
 ```
 
 ### id
 ```
 Get-xSCSMUserRole [[-Id] <Guid[]>] [-NoAdapt] [-ComputerName <String>] [-Credential <PSCredential>]
- [-SCSMSession <EnterpriseManagementGroup>] [-ThreeLetterWindowsLanguageName <String>]
- [-ProgressAction <ActionPreference>] [<CommonParameters>]
+ [-SCSMSession <EnterpriseManagementGroup>] [-ThreeLetterWindowsLanguageName <String>] [<CommonParameters>]
 ```
 
 ### displayName
 ```
 Get-xSCSMUserRole [[-DisplayName] <String[]>] [-NoAdapt] [-ComputerName <String>] [-Credential <PSCredential>]
- [-SCSMSession <EnterpriseManagementGroup>] [-ThreeLetterWindowsLanguageName <String>]
- [-ProgressAction <ActionPreference>] [<CommonParameters>]
+ [-SCSMSession <EnterpriseManagementGroup>] [-ThreeLetterWindowsLanguageName <String>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -160,21 +157,6 @@ The default is current UI Culture
 Type: System.String
 Parameter Sets: (All)
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: System.Management.Automation.ActionPreference
-Parameter Sets: (All)
-Aliases: proga
 
 Required: False
 Position: Named

@@ -19,7 +19,7 @@ New-xSCSMUserRole -DisplayName <String> -Profile <Profile> [-Description <String
  [-ConsoleTasks <ManagementPackConsoleTask[]>] [-SCSMUsers <EnterpriseManagementObject[]>] [-Users <String[]>]
  [-AllTemplates] [-AllObjects] [-AllClasses] [-AllViews] [-AllConsoleTasks] [-ComputerName <String>]
  [-Credential <PSCredential>] [-SCSMSession <EnterpriseManagementGroup>]
- [-ThreeLetterWindowsLanguageName <String>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
+ [-ThreeLetterWindowsLanguageName <String>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -314,21 +314,6 @@ Accept wildcard characters: False
 Type: Microsoft.EnterpriseManagement.Configuration.ManagementPackView[]
 Parameter Sets: (All)
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: System.Management.Automation.ActionPreference
-Parameter Sets: (All)
-Aliases: proga
 
 Required: False
 Position: Named

@@ -17,7 +17,7 @@ schema: 2.0.0
 Get-xSCSMObjectProjection [-ProjectionObject] <PSObject> [-NoSort] [-NoCommit] [-Filter <String>]
  [-MaxCount <Int32>] [-SortBy <String>] [-QueryOption <ObjectQueryOptions>] [-ComputerName <String>]
  [-Credential <PSCredential>] [-SCSMSession <EnterpriseManagementGroup>]
- [-ThreeLetterWindowsLanguageName <String>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
+ [-ThreeLetterWindowsLanguageName <String>] [<CommonParameters>]
 ```
 
 ### Statistics
@@ -25,7 +25,7 @@ Get-xSCSMObjectProjection [-ProjectionObject] <PSObject> [-NoSort] [-NoCommit] [
 Get-xSCSMObjectProjection [-ProjectionObject] <PSObject> [-NoSort] [-Statistic] [-NoCommit] [-Filter <String>]
  [-MaxCount <Int32>] [-SortBy <String>] [-QueryOption <ObjectQueryOptions>] [-ComputerName <String>]
  [-Credential <PSCredential>] [-SCSMSession <EnterpriseManagementGroup>]
- [-ThreeLetterWindowsLanguageName <String>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
+ [-ThreeLetterWindowsLanguageName <String>] [<CommonParameters>]
 ```
 
 ### Raw
@@ -33,7 +33,7 @@ Get-xSCSMObjectProjection [-ProjectionObject] <PSObject> [-NoSort] [-Statistic] 
 Get-xSCSMObjectProjection [-Projection] <ManagementPackTypeProjection> [-NoSort] [-AdoptWithTargetEndpoint]
  [-NoCommit] [-Filter <String>] [-MaxCount <Int32>] [-SortBy <String>] [-QueryOption <ObjectQueryOptions>]
  [-ComputerName <String>] [-Credential <PSCredential>] [-SCSMSession <EnterpriseManagementGroup>]
- [-ThreeLetterWindowsLanguageName <String>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
+ [-ThreeLetterWindowsLanguageName <String>] [<CommonParameters>]
 ```
 
 ### Name
@@ -41,7 +41,7 @@ Get-xSCSMObjectProjection [-Projection] <ManagementPackTypeProjection> [-NoSort]
 Get-xSCSMObjectProjection [-ProjectionName] <String> [-NoSort] [-AdoptWithTargetEndpoint] [-NoCommit]
  [-Filter <String>] [-MaxCount <Int32>] [-SortBy <String>] [-QueryOption <ObjectQueryOptions>]
  [-ComputerName <String>] [-Credential <PSCredential>] [-SCSMSession <EnterpriseManagementGroup>]
- [-ThreeLetterWindowsLanguageName <String>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
+ [-ThreeLetterWindowsLanguageName <String>] [<CommonParameters>]
 ```
 
 ### Criteria
@@ -49,7 +49,7 @@ Get-xSCSMObjectProjection [-ProjectionName] <String> [-NoSort] [-AdoptWithTarget
 Get-xSCSMObjectProjection -Criteria <ObjectProjectionCriteria> [-NoSort] [-AdoptWithTargetEndpoint] [-NoCommit]
  [-Filter <String>] [-MaxCount <Int32>] [-SortBy <String>] [-QueryOption <ObjectQueryOptions>]
  [-ComputerName <String>] [-Credential <PSCredential>] [-SCSMSession <EnterpriseManagementGroup>]
- [-ThreeLetterWindowsLanguageName <String>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
+ [-ThreeLetterWindowsLanguageName <String>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -299,21 +299,6 @@ The default is current UI Culture
 Type: System.String
 Parameter Sets: (All)
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: System.Management.Automation.ActionPreference
-Parameter Sets: (All)
-Aliases: proga
 
 Required: False
 Position: Named

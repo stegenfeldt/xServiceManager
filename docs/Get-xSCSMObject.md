@@ -16,24 +16,21 @@ schema: 2.0.0
 ```
 Get-xSCSMObject [-Class] <ManagementPackClass> [-NoAdapt] [-Filter <String>] [-MaxCount <Int32>]
  [-SortBy <String>] [-QueryOption <ObjectQueryOptions>] [-ComputerName <String>] [-Credential <PSCredential>]
- [-SCSMSession <EnterpriseManagementGroup>] [-ThreeLetterWindowsLanguageName <String>]
- [-ProgressAction <ActionPreference>] [<CommonParameters>]
+ [-SCSMSession <EnterpriseManagementGroup>] [-ThreeLetterWindowsLanguageName <String>] [<CommonParameters>]
 ```
 
 ### Statistic
 ```
 Get-xSCSMObject [-Class] <ManagementPackClass> [-NoAdapt] [-Statistic] [-Filter <String>] [-MaxCount <Int32>]
  [-SortBy <String>] [-QueryOption <ObjectQueryOptions>] [-ComputerName <String>] [-Credential <PSCredential>]
- [-SCSMSession <EnterpriseManagementGroup>] [-ThreeLetterWindowsLanguageName <String>]
- [-ProgressAction <ActionPreference>] [<CommonParameters>]
+ [-SCSMSession <EnterpriseManagementGroup>] [-ThreeLetterWindowsLanguageName <String>] [<CommonParameters>]
 ```
 
 ### Guid
 ```
 Get-xSCSMObject [-Id] <Guid> [-NoAdapt] [-Filter <String>] [-MaxCount <Int32>] [-SortBy <String>]
  [-QueryOption <ObjectQueryOptions>] [-ComputerName <String>] [-Credential <PSCredential>]
- [-SCSMSession <EnterpriseManagementGroup>] [-ThreeLetterWindowsLanguageName <String>]
- [-ProgressAction <ActionPreference>] [<CommonParameters>]
+ [-SCSMSession <EnterpriseManagementGroup>] [-ThreeLetterWindowsLanguageName <String>] [<CommonParameters>]
 ```
 
 ### Criteria
@@ -41,7 +38,7 @@ Get-xSCSMObject [-Id] <Guid> [-NoAdapt] [-Filter <String>] [-MaxCount <Int32>] [
 Get-xSCSMObject -Criteria <EnterpriseManagementObjectCriteria> [-NoAdapt] [-Filter <String>]
  [-MaxCount <Int32>] [-SortBy <String>] [-QueryOption <ObjectQueryOptions>] [-ComputerName <String>]
  [-Credential <PSCredential>] [-SCSMSession <EnterpriseManagementGroup>]
- [-ThreeLetterWindowsLanguageName <String>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
+ [-ThreeLetterWindowsLanguageName <String>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -246,21 +243,6 @@ The default is current UI Culture
 Type: System.String
 Parameter Sets: (All)
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: System.Management.Automation.ActionPreference
-Parameter Sets: (All)
-Aliases: proga
 
 Required: False
 Position: Named

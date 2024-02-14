@@ -30,7 +30,7 @@ if ($null -eq (Get-Module -Name 'platyPS')) {
         }
     } else {
         # module is not available, attempt to install it for the current user
-        Install-Module -Name 'platyPS' -Scope CurrentUser -AcceptLicense -Confirm -SkipPublisherCheck -Repository PSGallery
+        Install-Module -Name 'platyPS' -Scope CurrentUser -Confirm -SkipPublisherCheck -Repository PSGallery
         Import-Module -Name 'platyPS'
         if ($?) {
             $updateDoc = $true

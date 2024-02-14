@@ -20,8 +20,7 @@ Set-xSCSMUserRole [[-Name] <String[]>] [-DisplayName <String>] [-Description <St
  [-ConsoleTasks <ManagementPackConsoleTask[]>] [-SCSMUsers <EnterpriseManagementObject[]>] [-Users <String[]>]
  [-AllTemplates] [-AllObjects] [-AllClasses] [-AllViews] [-AllConsoleTasks] [-ComputerName <String>]
  [-Credential <PSCredential>] [-SCSMSession <EnterpriseManagementGroup>]
- [-ThreeLetterWindowsLanguageName <String>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-ThreeLetterWindowsLanguageName <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### id
@@ -32,8 +31,7 @@ Set-xSCSMUserRole [[-Id] <Guid[]>] [-DisplayName <String>] [-Description <String
  [-ConsoleTasks <ManagementPackConsoleTask[]>] [-SCSMUsers <EnterpriseManagementObject[]>] [-Users <String[]>]
  [-AllTemplates] [-AllObjects] [-AllClasses] [-AllViews] [-AllConsoleTasks] [-ComputerName <String>]
  [-Credential <PSCredential>] [-SCSMSession <EnterpriseManagementGroup>]
- [-ThreeLetterWindowsLanguageName <String>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-ThreeLetterWindowsLanguageName <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -374,21 +372,6 @@ The cmdlet is not run.
 Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -ProgressAction
-{{ Fill ProgressAction Description }}
-
-```yaml
-Type: System.Management.Automation.ActionPreference
-Parameter Sets: (All)
-Aliases: proga
 
 Required: False
 Position: Named
